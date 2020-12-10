@@ -9,6 +9,6 @@ docker push lexarflash8g/multi-server:$SHA
 docker push lexarflash8g/multi-worker:$SHA
 kubectl apply -f k8s
 kubectl set image deployments/server-deployment server=lexarflash8g/multi-server:$SHA
-kubectl set image deployments/client-deployment server=lexarflash8g/multi-client:$SHA
-kubectl set image deployments/worker-deployment server=lexarflash8g/multi-worker:$SHA
+kubectl set image deployments/client-deployment client=lexarflash8g/multi-client:$SHA
+kubectl set image deployments/worker-deployment worker=lexarflash8g/multi-worker:$SHA
 
