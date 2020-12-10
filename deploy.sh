@@ -1,6 +1,6 @@
 docker build -t lexarflash8g/multi-client:latest -t lexarflash8g/multi-client:$SHA -f ./client/Dockerfile ./client
 docker build -t lexarflash8g/multi-server:latest -t lexarflash8g/multi-server:$SHA -f ./server/Dockerfile ./server
-docker build -t lexarflash8g/multi-worker:latest -t lexarflash8g/multi-worker:$SHA-f /.worker/Dockerfile ./worker
+docker build -t lexarflash8g/multi-worker:latest -t lexarflash8g/multi-worker:$SHA-f ./worker/Dockerfile ./worker
 docker push lexarflash8g/multi-client:latest
 docker push lexarflash8g/multi-server:latest
 docker push lexarflash8g/multi-worker:latest
